@@ -42,7 +42,6 @@ public class InimigoAtaque : MonoBehaviour
 
     void AtaqueCorpoACorpo()
     {
-        Debug.Log("Inimigo atacou corpo a corpo!");
         if (jogador != null)
         {
             VidaJogador vida = jogador.GetComponent<VidaJogador>();
@@ -56,8 +55,6 @@ public class InimigoAtaque : MonoBehaviour
     void Atirar()
     {
         if (projetilPrefab == null || pontoDisparo == null) return;
-
-        Debug.Log("Inimigo atirou!");
 
         // Instancia o projétil e dispara em direção ao jogador
         GameObject projetil = Instantiate(projetilPrefab, pontoDisparo.position, Quaternion.identity);

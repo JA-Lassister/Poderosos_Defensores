@@ -27,17 +27,11 @@ public class GameManagerFase1 : MonoBehaviour
     public void InimigoMorreu()
     {
         inimigosRestantes--;
-
-        Debug.Log("Inimigos restantes: " + inimigosRestantes);
-
         if (inimigosRestantes <= 0)
         {
-            AvancarParaProximaFase();
+            StartCoroutine(SelecaoFase.CarregarFase(2,3f));
         }
     }
 
-    void AvancarParaProximaFase()
-    {
-        SceneManager.LoadScene("Fase2");
-    }
+
 }

@@ -52,7 +52,5 @@ public class Combate : MonoBehaviour
         if (animator != null)
             animator.SetBool("Atirar2", modoDisparo);
             animator.SetTrigger("Atirar");
-
-        Debug.Log(modoDisparo ? "Modo Disparo Ativado" : "Modo Corpo a Corpo Ativado");
     }
 }

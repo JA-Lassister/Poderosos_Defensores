@@ -121,10 +121,10 @@ public class Movimentacao8DirecoesCorrida : MonoBehaviour
             if (Time.time - ultimoToqueW < tempoDuploToque)
             {
                 correndo = true; // Segundo toque rápido = correr
-                animator.SetBool("correndo", true);
+                animator.SetBool("Correndo", true);
             }
             ultimoToqueW = Time.time;
-            animator.SetBool("correndo", false);
+            animator.SetBool("Correndo", false);
         }
 
         // Se soltar W, para de correr
