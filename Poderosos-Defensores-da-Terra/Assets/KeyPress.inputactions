@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "name": "KeyPress",
+    "maps": [
+        {
+            "name": "KeyPress",
+            "id": "093415b7-32e8-45fa-bc0c-2a1f86ba3463",
+            "actions": [
+                {
+                    "name": "Any",
+                    "type": "Button",
+                    "id": "3a92ca07-aaa3-4405-bf8a-4f1a84891a60",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a190e91b-8113-444d-a2e5-46e44e0f052c",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Any",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Keyboard",
+            "bindingGroup": "Keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

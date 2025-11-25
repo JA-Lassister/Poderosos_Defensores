@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menus/MenuInicial.unity
+    guid: b9d6b533b1f48b1e7b17446271415c87
+  - enabled: 1
+    path: Assets/Scenes/Interludios/PreFase1.unity
+    guid: 3bda9d51239c08714a2e2b1a917e6dc9
+  - enabled: 1
+    path: Assets/Scenes/Fase1.unity
+    guid: a226f79ae537f2206aba361d91ed8701
+  - enabled: 1
+    path: Assets/Scenes/Interludios/PreFase2.unity
+    guid: dc95e1c544362d45d97bd4f6ff5011ad
+  - enabled: 1
+    path: Assets/Scenes/Fase2.unity
+    guid: 23e361560270d844ea6cbf88516c6116
+  - enabled: 1
+    path: Assets/Scenes/Interludios/PreFase3.unity
+    guid: e9019bd5e9d78d979a6310ed307fea60
+  - enabled: 1
+    path: Assets/Scenes/Fase3.unity
+    guid: 88d19c6e47d4a8a43be74971984596cd
+  - enabled: 1
+    path: Assets/Scenes/Interludios/PreFase4.unity
+    guid: 470a443b884f2f1bab23f2fc5764f84e
+  - enabled: 1
+    path: Assets/Scenes/Fase4.unity
+    guid: bb22e8dfaa96e864790c801e9a0c5cef
+  - enabled: 1
+    path: Assets/Scenes/Interludios/PreFase5.unity
+    guid: 6b6182af7af4a01888a821f4033c3ce6
+  - enabled: 1
+    path: Assets/Scenes/Fase5.unity
+    guid: a9175824ac537edea82e152b6bd62857
+  - enabled: 1
+    path: Assets/Scenes/Interludios/Encerramento.unity
+    guid: 54d968310a3985b20991d71ade26731f
+  - enabled: 1
+    path: Assets/Scenes/Menus/Opcoes.unity
+    guid: d9ba20e8b8b8fca0ca198391a1a88905
+  - enabled: 1
+    path: Assets/Scenes/Menus/Selecionar Fase.unity
+    guid: 33a87aed9b305a4f4ab4dae8af1e18ac
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_UseUCBPForAssetBundles: 0

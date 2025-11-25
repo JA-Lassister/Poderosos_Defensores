@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ac7931c5b463e69438fd500294a958cf
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 321473
+  packageName: "Ripple Shader Pack \u2013 Real-Time Water Ripples"
+  packageVersion: 1.0.0
+  assetPath: Assets/WaterRippleShader Eldvmo/Scenes/ContinuousRipple.unity
+  uploadId: 766405
