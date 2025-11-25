@@ -12,6 +12,7 @@ public class ControladorJanada : Controlador
     public float velocidadeRotacao = 6f;
     public float velocidadeMovimentacaoNormal = 1f;
     public float velocidadeMovimentacaoDash = 2f;
+    public float delayDanoJogador = 1f;
     
     public float danoInimigo = 5f;
 
@@ -43,11 +44,10 @@ public class ControladorJanada : Controlador
         {
             case EstadoJanada.PERSEGUIR:
                 RotacionarAoJogador(transform.position - jogador.transform.position); 
-                PerseguirJogador(transform.position - jogador.transform.position, velocidadeMovimentacaoNormal); 
+                PerseguirJogador(transform.position - jogador.transform.position); 
                 break;
             case EstadoJanada.ACELERACAO:
-                RotacionarAoJogador(transform.position - jogador.transform.position); 
-                PerseguirJogador(transform.position - jogador.transform.position, velocidadeMovimentacaoDash);
+                Investir();
                 break;
         }
     }
@@ -58,9 +58,15 @@ public class ControladorJanada : Controlador
         transform.localRotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * velocidadeRotacao);
     }
 
-    private void PerseguirJogador(Vector3 dir, float velocidade)
+    private void PerseguirJogador(Vector3 dir)
     {
-        Vector3 v = transform.position - velocidade * Time.deltaTime * dir;
+        Vector3 v = transform.position - velocidadeMovimentacaoNormal * Time.deltaTime * dir;
+        transform.position = ParedesInvisiveis.PosicaoAjustada(v);
+    }
+
+    private void Investir()
+    {
+        Vector3 v = transform.position - velocidadeMovimentacaoDash * Time.deltaTime * transform.forward;
         transform.position = ParedesInvisiveis.PosicaoAjustada(v);
     }
 
@@ -118,13 +124,23 @@ public class ControladorJanada : Controlador
     private void OnTriggerEnter(Collider c)
     {
         if (c.CompareTag("Player")) {
+            
             if (Vector3.Dot(transform.forward, transform.position - jogador.transform.position) > 0f)
                 animator.SetTrigger("Bite");
 
-            Invoke(nameof(EfetivarDano), 1f);
+            if (_estado == EstadoJanada.ACELERACAO) {
+                CancelInvoke(nameof(EncerrarDash));
+                EncerrarDash();
+            }
+
+            Invoke(nameof(EfetivarDano), delayDanoJogador);
         }
         else if (c.CompareTag("Bala")) {
             vidaInimigo.DecreaseHealthPercent(danoInimigo / 100);
+        }
+        else if (c.CompareTag("Parede") && _estado == EstadoJanada.ACELERACAO) {
+            CancelInvoke(nameof(EncerrarDash));
+            EncerrarDash();
         }
     }
 

@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - Bala
   - Inimigo
+  - Parede
   layers:
   - Default
   - TransparentFX
