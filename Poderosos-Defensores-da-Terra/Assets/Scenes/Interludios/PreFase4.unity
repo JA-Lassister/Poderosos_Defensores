@@ -719,11 +719,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
       propertyPath: m_text
-      value: FASE 4
+      value: MOnstro das profundezas!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895426901645307402, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_text
+      value: Capitulo 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178107417017312801, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7137472502919537537, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
       propertyPath: m_Name
       value: Fase 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253033818919555955, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_text
+      value: abatido nos ceus, o inimigo cai em direcao ao mar, afundando proximo
+        a praia da cidade. agora em um barco, o primeiro dos defensores vai ate o
+        local para averiguar se a ameaca foi detida. ele logo descobriria que nao,
+        quando a criatura surge debaixo dele tentando abocanha-lo, agora em uma nova
+        forma adaptada ao mar. Por pouco, ele escapou e sabe que quiser se manter
+        vivo tera que derrotar a criatura em um embate maritimo...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

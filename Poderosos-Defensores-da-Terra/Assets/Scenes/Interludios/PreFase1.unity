@@ -1742,6 +1742,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_text
+      value: A ameaca desce dos ceus!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895426901645307402, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_text
+      value: Capitulo 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178107417017312801, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253033818919555955, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_text
+      value: Uma chuva de meteoros atingiu a cidade causando caos e destruicao. como
+        se a situacao nao pudesse piorar, as rochas espaciais comecaram a chocar
+        como ovos e delas seres alienigenas sairam e atacaram os cidadaos. cabe ao
+        trio conhecido como "os poderosos defensores da terra contra ameacas extraterrestres"
+        lutar contra estes seres. um deles parte para investigar um meteoro que se
+        destaca dos demais pelo seu tamanho exorbitante, temendo a ameaca que pode
+        sair de dentro dele...
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
