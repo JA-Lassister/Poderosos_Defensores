@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Interludio : MonoBehaviour
+public class Interludio : Menu
 {
     public void IniciarFase() => 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
