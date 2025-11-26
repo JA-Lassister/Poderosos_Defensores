@@ -23,10 +23,14 @@ public class Pause : MonoBehaviour
         if (_pausado) {
             Time.timeScale = 1f;
             telaPause.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked; // Trava o mouse no centro
+            Cursor.visible = false;                   // Esconde a setinha
         }
         else {
             Time.timeScale = 0f;
             telaPause.SetActive(true);
+            Cursor.lockState = CursorLockMode.None; // Trava o mouse no centro
+            Cursor.visible = true;                   // Esconde a setinha
         }
 
         _pausado = !_pausado;
@@ -51,6 +55,10 @@ public class Pause : MonoBehaviour
         _pause.started -= Pausar;
         singleton = null;
         Destroy(gameObject);
+
+        Cursor.lockState = CursorLockMode.None; // Garante que o mouse esteja solto no menu
+        Cursor.visible = true;
+
         SelecaoFase.CarregarMenuInicial();
     }
 }
