@@ -176,11 +176,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: texto texto texto texto texto texto texto texto texto texto texto texto
-    texto texto texto texto texto texto texto texto texto texto texto texto texto
-    texto texto texto texto texto texto texto texto texto texto texto texto texto
-    texto texto texto texto texto texto texto texto texto texto texto texto texto
-    texto texto texto texto texto texto texto texto texto texto texto texto texto
+  m_text: 'Um jogo por:
+
+
+    Joao Antonio Lassister Melo
+
+    Davi Azarias do Vale
+    Cabral
+
+    Renan Catini Amaral
+
+    Luis Renato Goulart
+
+    Joao Antonio Siqueira
+    Pascuini'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b8c3700e557cba4eb461a7cdcc138e0, type: 2}
   m_sharedMaterial: {fileID: 1593218844464949318, guid: 0b8c3700e557cba4eb461a7cdcc138e0, type: 2}
