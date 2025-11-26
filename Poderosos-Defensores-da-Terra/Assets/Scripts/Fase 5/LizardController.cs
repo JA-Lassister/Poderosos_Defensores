@@ -193,7 +193,7 @@ public class LizardController : MonoBehaviour
         anim.SetTrigger("Die");
         player.PlayVictory();
         StopAllCoroutines();
-        StartCoroutine(SelecaoFase.CarregarFase(6, 3));
+        StartCoroutine(SelecaoFase.CarregarFase(6, 4));
     }
 
     // ============================================================

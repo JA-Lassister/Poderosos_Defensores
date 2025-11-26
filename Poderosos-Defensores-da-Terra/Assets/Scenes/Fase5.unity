@@ -2364,9 +2364,9 @@ MonoBehaviour:
   playerHealth: {fileID: 1291579053}
   lizardHealth: {fileID: 2110998390}
   enemyDamage: 5
-  playerDamage: 5
+  playerDamage: 3
   minAttackDelay: 1.5
-  maxAttackDelay: 3
+  maxAttackDelay: 2.5
   doubleAttackChance: 0.35
 --- !u!1001 &1506757755
 PrefabInstance:
@@ -4132,7 +4132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7241c42e8081474390122ace7b983b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LizardHealth
-  MaxHealth: 100
+  MaxHealth: 120
   healthBar: {fileID: 1626628222}
 --- !u!4 &2124812750 stripped
 Transform:
