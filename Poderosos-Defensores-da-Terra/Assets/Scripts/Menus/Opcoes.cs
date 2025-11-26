@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Opcoes : MonoBehaviour
+public class Opcoes : Menu
 {
     public ControladorCRT controladorCRT;
     
@@ -15,10 +15,8 @@ public class Opcoes : MonoBehaviour
 
     private bool _editado;
 
-    public void Start()
+    public void Awake()
     {
-        Persistencia.CarregarPrefs();
-
         _crt = Persistencia.CRT();
         _volAmbiente = Persistencia.VolumeAmbiente();
         _volMusica = Persistencia.VolumeMusica();

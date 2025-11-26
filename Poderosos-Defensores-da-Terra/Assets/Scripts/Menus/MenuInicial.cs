@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MenuInicial : MonoBehaviour
+public class MenuInicial : Menu
 {
     public void Awake() => Persistencia.CarregarPrefs();
     public void NovoJogo() => SelecaoFase.CarregarFase(1);
