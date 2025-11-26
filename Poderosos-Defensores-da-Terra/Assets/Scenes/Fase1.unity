@@ -8417,7 +8417,7 @@ MonoBehaviour:
   miraUI: {fileID: 1809770659}
   projetilPrefab: {fileID: 8759105177341159027, guid: cad5bf4a4614a8ff7b79be7852e4c364, type: 3}
   velocidadeProjetil: 60
-  dano: 2000
+  dano: 20
   alcance: 100
   cadencia: 0.3
   fovNormal: 60
