@@ -964,11 +964,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
       propertyPath: m_text
-      value: FASE 2
+      value: O gigante imparavel!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895426901645307402, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_text
+      value: Capitulo 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178107417017312801, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7137472502919537537, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
       propertyPath: m_Name
       value: Fase 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253033818919555955, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_text
+      value: Quando um dos defensores finalmente alcanca o meteoro, este se abre
+        revelando uma nova ameaca, um alien muito maior que todos os outros, um que
+        ele nao conseguiria enfrentar sozinho. por sorte, um segundo membro do time
+        chega para ajuda-lo, em seu veiculo de combate, chamando a atencao do gigante
+        e dando inicio a uma perseguicao pelas ruas da cidade. O defensor sabe que
+        a critura nao sera derrotada facilmente mas tem um plano em mente, direcionar
+        toda a energia do veiculo para sua arma...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

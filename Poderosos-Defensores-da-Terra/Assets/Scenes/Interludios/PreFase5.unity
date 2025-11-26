@@ -1587,9 +1587,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
       propertyPath: m_text
-      value: 'FASE 5
-
-'
+      value: O ultimato de colossos!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_fontStyle
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582640125547660494, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895426901645307402, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_text
+      value: Capitulo 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6178107417017312801, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 6312902517548494092, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
       propertyPath: m_Name
@@ -1598,6 +1616,16 @@ PrefabInstance:
     - target: {fileID: 7137472502919537537, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
       propertyPath: m_Name
       value: Fase 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253033818919555955, guid: 62acdcafe7baa9b91b071a776f07c1b9, type: 3}
+      propertyPath: m_text
+      value: Derrotado, o alien afundou na agua novamente, mas desta vez os defensores
+        ja esperavam que este nao seria o fim. logo o monstro retornou, emergindo
+        da agua em sua forma mais colossal, caaminhando em direcao a cidade destruindo
+        tudo em seu caminho. Prontos para colocar um fim nesta ameaca de forma definitiva,
+        os defesores uniram seus veiculos, que tomaram a forma de um robo gigante
+        e entao partiram para cima do inimigo, levando-o ate um estadio de futebol,
+        que seriviria como arena para o embate final...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
