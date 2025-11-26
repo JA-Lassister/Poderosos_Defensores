@@ -1712,12 +1712,12 @@ MonoBehaviour:
   animator: {fileID: 1442299290}
   vidaInimigo: {fileID: 1863265788}
   velocidadeRotacao: 6
-  velocidadeMovimentacaoNormal: 0.6
+  velocidadeMovimentacaoNormal: 0.4
   velocidadeMovimentacaoDash: 40
   delayDanoJogador: 1
-  danoInimigo: 5
-  tempoMin: 3
-  tempoMax: 5
+  danoInimigo: 7
+  tempoMin: 4
+  tempoMax: 7
   tempoMaxDash: 3
   tempoSubmersao: 3
   profundidadeSubmersao: 0.8
@@ -5940,7 +5940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   vida: {fileID: 1393162455}
-  rotationSpeed: 190
+  rotationSpeed: 260
   moveSpeed: 1
   accelerationRate: 0.2
   maxAcceleration: 30
