@@ -1,4 +1,3 @@
-using UnityEngine;
 using UnityEngine.UI;
 
 public class Opcoes : Menu
@@ -15,7 +14,7 @@ public class Opcoes : Menu
 
     private bool _editado;
 
-    public void Awake()
+    public void Start()
     {
         _crt = Persistencia.CRT();
         _volAmbiente = Persistencia.VolumeAmbiente();
