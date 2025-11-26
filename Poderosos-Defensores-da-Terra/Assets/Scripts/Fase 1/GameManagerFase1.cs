@@ -27,7 +27,7 @@ public class GameManagerFase1 : MonoBehaviour
     public void InimigoMorreu()
     {
         inimigosRestantes--;
-        if (inimigosRestantes <= 0)
+        if (inimigosRestantes == 0)
         {
             StartCoroutine(SelecaoFase.CarregarFase(2,3f));
         }

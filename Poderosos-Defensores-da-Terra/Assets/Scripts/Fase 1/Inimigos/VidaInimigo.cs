@@ -12,7 +12,7 @@ public class VidaInimigo : MonoBehaviour
     public float anguloVisao = 90f;     // Ângulo de visão (45° para cada lado)
     public float velocidadeGiro = 5f;   // Velocidade que o inimigo vira para o player
 
-    private bool morto = false;
+    public bool morto = false;
 
     void Start()
     {
@@ -26,12 +26,10 @@ public class VidaInimigo : MonoBehaviour
 
     void Update()
     {
-        if (morto) return; // Não olha após morrer
-
-        if (PlayerDentroDoCampoDeVisao())
+        if (PlayerDentroDoCampoDeVisao() && !morto)
         {
             OlharParaPlayer();
-        }
+        } 
     }
 
     bool PlayerDentroDoCampoDeVisao()
@@ -70,14 +68,12 @@ public class VidaInimigo : MonoBehaviour
         {
             morto = true;
 
-            if (animator != null)
-                animator.SetTrigger("Morte");
+            animator.SetTrigger("Morte");
 
             // ⚠️ Notifica o GameManager
-            if (GameManagerFase1.instancia != null)
-                GameManagerFase1.instancia.InimigoMorreu();
+            GameManagerFase1.instancia.InimigoMorreu();
 
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 0.5f);
         }
     }
 

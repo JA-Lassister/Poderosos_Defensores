@@ -20,6 +20,13 @@ public class InimigoAtaque : MonoBehaviour
     private float proximoAtaqueMelee = 0f;
     private float proximoTiro = 0f;
 
+    private VidaInimigo scriptVida;
+
+    void Start()
+    {
+        scriptVida = GetComponent<VidaInimigo>();
+    }
+
     void Update()
     {
         if (jogador == null) return;
@@ -27,13 +34,13 @@ public class InimigoAtaque : MonoBehaviour
         float distancia = Vector3.Distance(transform.position, jogador.position);
 
         // --- ATAQUE CORPO A CORPO ---
-        if (distancia <= alcanceMelee && Time.time >= proximoAtaqueMelee)
+        if (distancia <= alcanceMelee && Time.time >= proximoAtaqueMelee && !scriptVida.morto)
         {
             AtaqueCorpoACorpo();
             proximoAtaqueMelee = Time.time + tempoEntreAtaquesMelee;
         }
         // --- ATAQUE À DISTÂNCIA ---
-        else if (distancia <= alcanceTiro && Time.time >= proximoTiro)
+        else if (distancia <= alcanceTiro && Time.time >= proximoTiro && !scriptVida.morto)
         {
             Atirar();
             proximoTiro = Time.time + cadenciaTiro;

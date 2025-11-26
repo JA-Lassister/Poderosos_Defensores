@@ -18,10 +18,15 @@ public class InimigoCorpoACorpo : MonoBehaviour
 
     private bool estaAtacando = false;
 
+
+    private VidaInimigo scriptVida;
+
     void Start()
     {
         if (anim == null)
             anim = GetComponent<Animator>();
+
+        scriptVida = GetComponent<VidaInimigo>();
     }
 
     void Update()
@@ -42,7 +47,7 @@ public class InimigoCorpoACorpo : MonoBehaviour
         }
 
         // Controle de ataque
-        if (distancia <= alcanceAtaque && Time.time >= proximoAtaque)
+        if (distancia <= alcanceAtaque && Time.time >= proximoAtaque && !scriptVida.morto)
         {
             Atacar();
             proximoAtaque = Time.time + intervaloAtaque;

@@ -15,10 +15,14 @@ public class MovInimigo : MonoBehaviour
 
     private bool jogadorVisivel = false;
 
+    private VidaInimigo scriptVida;
+
     void Start()
     {
         if (anim == null)
             anim = GetComponent<Animator>();
+
+        scriptVida = GetComponent<VidaInimigo>();
     }
 
     void Update()
@@ -36,7 +40,7 @@ public class MovInimigo : MonoBehaviour
 
         float distancia = Vector3.Distance(transform.position, player.position);
 
-        if (distancia > stopDistance)
+        if (distancia > stopDistance && !scriptVida.morto)
         {
             MoverAtePlayer();
         }
