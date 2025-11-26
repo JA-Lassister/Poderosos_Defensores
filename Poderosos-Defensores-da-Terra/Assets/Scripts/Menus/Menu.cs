@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Menu : MonoBehaviour
 {
-    void Start() {
+    void Awake() {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
