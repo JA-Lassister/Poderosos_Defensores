@@ -9,7 +9,7 @@ public class LifeTime : MonoBehaviour
 
     void Start()
     {
-        // Pega o RectTransform do próprio texto
+        // Pega o RectTransform do proprio texto
         rectTransform = textoTempo.GetComponent<RectTransform>();
 
         // Centraliza no topo
@@ -17,7 +17,7 @@ public class LifeTime : MonoBehaviour
         rectTransform.anchorMax = new Vector2(0.5f, 1);
         rectTransform.pivot = new Vector2(0.5f, 1);
 
-        // Mantém centralizado, apenas desce um pouco da borda superior
+        // Mantem centralizado, apenas desce um pouco da borda superior
         rectTransform.anchoredPosition = new Vector2(0f, -40f);
     }
 

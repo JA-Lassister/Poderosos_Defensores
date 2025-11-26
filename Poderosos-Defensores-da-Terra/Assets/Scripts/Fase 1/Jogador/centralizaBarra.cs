@@ -14,15 +14,10 @@ public class centralizaBarra : MonoBehaviour
     {
         rectTransform = GetComponent<RectTransform>();
 
-        // Fixa no centro superior
-        rectTransform.anchorMin = new Vector2(0.5f, 1);
-        rectTransform.anchorMax = new Vector2(0.5f, 1);
-        rectTransform.pivot = new Vector2(0.5f, 1);
-    }
+        rectTransform.anchorMin = new Vector2(0, 1);
+        rectTransform.anchorMax = new Vector2(0, 1);
+        rectTransform.pivot = new Vector2(0, 1);
 
-    void Update()
-    {
-        rectTransform.anchoredPosition = new Vector2(0, -10f);
+        rectTransform.anchoredPosition = new Vector2(35f, -20f);
     }
-
 }
